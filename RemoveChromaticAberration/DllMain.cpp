@@ -6,6 +6,7 @@ using namespace ModUtils;
 
 DWORD WINAPI MainThread(LPVOID lpParam)
 {
+	Sleep(5000); // 5 seconds delay for compatiblity with other mods
 	Log("Activating RemoveChromaticAberration...");
 	std::string aob = "0f 11 ? 60 ? 8d ? 80 00 00 00 0f 10 ? a0 00 00 00 0f 11 ? f0 ? 8d ? b0 00 00 00 0f 10 ? 0f 11 ? 0f 10 ? 10";
 	std::string expectedBytes = "0f 11 ? ?";
